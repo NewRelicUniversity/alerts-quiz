@@ -1,23 +1,31 @@
 const quizData = [
     {
-        question: 'You are creating an alert condition to monitor CPU usage reported by the New Relic Infrastructure agent. Which aggregation method should you choose?',
-        options: ['Event Timer', 'Cadence', 'Event Flow', 'Loss of Signal']
+        question: 'You are creating an alert condition to monitor CPU usage reported by the New Relic Infrastructure agent. Which streaming method should you choose?',
+        options: ['Event Timer', 'Cadence', 'Event Flow']
     },
     {
-        question: 'You have created an alert condition based on the following query: <p style="margin: 1pt 0 1pt 0"><code>SELECT count(*) FROM Transaction WHERE error IS true</code></p> Which aggregation method will likely work best?',
-        options: ['Event Timer', 'Cadence', 'Event Flow', 'Loss of Signal']
+        question: 'You have created an alert condition based on the following query: <p style="margin: 1pt 0 1pt 0"><code>SELECT count(*) FROM Transaction WHERE error IS true</code></p> Which streaming method will likely work best?',
+        options: ['Event Timer', 'Cadence', 'Event Flow']
+    },
+    {
+        question: 'When should you use the Cadence streaming method?',
+        options: [
+            'For data that comes in frequently, such as from New Relic agents', 
+            'For data that comes in infrequently and potentially in batches', 
+            'You generally shouldn’t. It is present for backward compatibility'
+        ]
     },
     {
         question: 'You have created an alert condition based on the following query: <p style="margin: 1pt 0 1pt 0"><code>SELECT count(*) FROM Transaction WHERE error IS true</code></p> The condition correctly creates an incident when an error occurs, but the incident doesn&rsquo;t close when there are no errors. Which alerts option is likely misconfigured?',
-        options: ['Event Timer', 'Cadence', 'Event Flow', 'Loss of Signal']
+        options: ['Evaluation Delay', 'Window Duration', 'Gap Filling', 'Loss of Signal']
     },
     {
-        question: 'You want to be notified if a daily batch process fails to run. Which alerts option should you use?',
-        options: ['Event Timer', 'Cadence', 'Event Flow', 'Loss of Signal']
+        question: 'You want to be notified if a daily scheduled task fails to run. Which alerts option should you use?',
+        options: ['Evaluation Delay', 'Window Duration', 'Gap Filling', 'Loss of Signal']
     },
     {
         question: 'Your application is deployed in an auto-scaling environment. When a new container starts up, the application runs slowly for the first few minutes. Which alerts option can you use to avoid false positive incidents?',
-        options: ['Cadence Aggregation', 'Gap Filling', 'Loss of Signal', 'Evaluation Delay']
+        options: ['Evaluation Delay', 'Window Duration', 'Gap Filling', 'Loss of Signal']
     }
 ];
 
