@@ -10,8 +10,8 @@ const quizData = [
     {
         question: 'When should you use the Cadence streaming method?',
         options: [
-            'For data that comes in frequently, such as from New Relic agents', 
-            'For data that comes in infrequently and potentially in batches', 
+            'For data that arrives frequently, such as from New Relic agents', 
+            'For data that arrives infrequently and potentially in batches', 
             'You generally shouldn’t. It is present for backward compatibility'
         ]
     },
