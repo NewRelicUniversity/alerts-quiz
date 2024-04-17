@@ -1,14 +1,14 @@
 const quizData = [
     {
-        question: 'You are creating an alert condition to monitor CPU usage reported by the New Relic Infrastructure agent. Which streaming method should you choose?',
+        question: '1. You are creating an alert condition to monitor CPU usage reported by the New Relic Infrastructure agent. Which streaming method should you choose?',
         options: ['Event Timer', 'Cadence', 'Event Flow']
     },
     {
-        question: 'You have created an alert condition based on the following query: <p style="margin: 1pt 0 1pt 0"><code>SELECT count(*) FROM Transaction WHERE error IS true</code></p> Which streaming method will likely work best?',
+        question: '2. You have created an alert condition based on the following query: <p style="margin: 1pt 0 1pt 0"><code>SELECT count(*) FROM Transaction WHERE error IS true</code></p> Which streaming method will likely work best?',
         options: ['Event Timer', 'Cadence', 'Event Flow']
     },
     {
-        question: 'When should you use the Cadence streaming method?',
+        question: '3. When should you use the Cadence streaming method?',
         options: [
             'For data that arrives frequently, such as from New Relic agents', 
             'For data that arrives infrequently and potentially in batches', 
@@ -16,15 +16,15 @@ const quizData = [
         ]
     },
     {
-        question: 'You have created an alert condition based on the following query: <p style="margin: 1pt 0 1pt 0"><code>SELECT count(*) FROM Transaction WHERE error IS true</code></p> The condition correctly creates an incident when an error occurs, but the incident doesn&rsquo;t close when there are no errors. Which alerts option is likely misconfigured?',
+        question: '4. You have created an alert condition based on the following query: <p style="margin: 1pt 0 1pt 0"><code>SELECT count(*) FROM Transaction WHERE error IS true</code></p> The condition correctly creates an incident when an error occurs, but the incident doesn&rsquo;t close when there are no more errors. Which alerts option is likely misconfigured?',
         options: ['Evaluation Delay', 'Window Duration', 'Gap Filling', 'Loss of Signal']
     },
     {
-        question: 'You want to be notified if a daily scheduled task fails to run. Which alerts option should you use?',
+        question: '5. You want to be notified if a daily scheduled job fails to run. Which alerts option should you use? (<i>Hint:</i> Search New Relic documentation for &ldquo;scheduled job&rdquo;)',
         options: ['Evaluation Delay', 'Window Duration', 'Gap Filling', 'Loss of Signal']
     },
     {
-        question: 'Your application is deployed in an auto-scaling environment. When a new container starts up, the application runs slowly for the first few minutes. Which alerts option can you use to avoid false positive incidents?',
+        question: '6. Your application is deployed in an auto-scaling environment. When a new instance starts up, the application throws errors for the first few minutes. Which alerts option can you use to avoid false positive incidents?',
         options: ['Evaluation Delay', 'Window Duration', 'Gap Filling', 'Loss of Signal']
     }
 ];
